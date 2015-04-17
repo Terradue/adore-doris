@@ -40,7 +40,7 @@
     
 
         
-    <div class="book" data-level="6.1" data-basepath=".." data-revision="Fri Apr 17 2015 17:36:17 GMT+0200 (CEST)">
+    <div class="book" data-level="6.1" data-basepath=".." data-revision="Fri Apr 17 2015 17:42:03 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -1686,33 +1686,27 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="usage"><a name="usage" class="plugin-anchor" href="#usage"><span class="fa fa-link"></span></a>USAGE:</h1>
+                        <h3 id="usage"><a name="usage" class="plugin-anchor" href="#usage"><span class="fa fa-link"></span></a>USAGE:</h3>
 <pre><code> coarsecorr
-</code></pre><h1 id="description"><a name="description" class="plugin-anchor" href="#description"><span class="fa fa-link"></span></a>DESCRIPTION:</h1>
-<blockquote>
+</code></pre><h3 id="description"><a name="description" class="plugin-anchor" href="#description"><span class="fa fa-link"></span></a>DESCRIPTION:</h3>
 <p>COARSECORR is an ADORE process and it runs the DORIS step with the same name.
 The offset in line (azimuth) and pixel (range) direction between master and slave is computed with an accuracy of about 1 pixel (1 offset for whole image).</p>
 <p>ADORE also supports a manual coregistration routine. You can access that by setting the <code>cc_method=manual</code>. ADORE will display the master and slave crop amplitudes. You can zoom in and pan the image. Then select the same point on both images using left click. Points are &quot;recorded&quot; using a right click on one of the windows. After both windows are closed, ADORE calculates the offsets and writes it to the result file.</p>
-</blockquote>
-<h1 id="input"><a name="input" class="plugin-anchor" href="#input"><span class="fa fa-link"></span></a>INPUT:</h1>
-<blockquote>
+<h3 id="input"><a name="input" class="plugin-anchor" href="#input"><span class="fa fa-link"></span></a>INPUT:</h3>
 <p>There are no required input parameters for this command.</p>
-<h2 id="optional"><a name="optional" class="plugin-anchor" href="#optional"><span class="fa fa-link"></span></a>OPTIONAL:</h2>
-<blockquote>
+<h4 id="optional"><a name="optional" class="plugin-anchor" href="#optional"><span class="fa fa-link"></span></a>OPTIONAL:</h4>
 <p>There are no optional input parameters for this command.</p>
-<h1 id="output"><a name="output" class="plugin-anchor" href="#output"><span class="fa fa-link"></span></a>OUTPUT</h1>
-</blockquote>
+<h3 id="output"><a name="output" class="plugin-anchor" href="#output"><span class="fa fa-link"></span></a>OUTPUT</h3>
 <p>SUCCESS is printed to STDOUT on successful completion of process.</p>
-<h1 id="files-and-references"><a name="files-and-references" class="plugin-anchor" href="#files-and-references"><span class="fa fa-link"></span></a>FILES and REFERENCES:</h1>
+<h3 id="files-and-references"><a name="files-and-references" class="plugin-anchor" href="#files-and-references"><span class="fa fa-link"></span></a>FILES and REFERENCES:</h3>
 <pre><code> ${ADOREFOLDER}/scr/process/coarsecorr
  ${ADOREFOLDER}/drs/${dorisVersion}/coarsecorr.drs
  http://doris.tudelft.nl/usermanual/node49.html
-</code></pre><h1 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>EXAMPLE:</h1>
+</code></pre><h3 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>EXAMPLE:</h3>
 <pre><code> coarsecorr
  coarsecorr -M10/10 (only when cc_method=manual)
-</code></pre><h1 id="known-bugs"><a name="known-bugs" class="plugin-anchor" href="#known-bugs"><span class="fa fa-link"></span></a>KNOWN BUGS:</h1>
+</code></pre><h3 id="known-bugs"><a name="known-bugs" class="plugin-anchor" href="#known-bugs"><span class="fa fa-link"></span></a>KNOWN BUGS:</h3>
 <p>With the manual method, if the crops are large, and you run out of memory trying to display them try adding the multilooking option (-M).</p>
-</blockquote>
 
                     
                     </section>
