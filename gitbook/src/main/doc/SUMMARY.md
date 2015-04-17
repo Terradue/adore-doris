@@ -3,7 +3,7 @@
 * [How to Install](chapter1/Installation.md)
 * [How to Update](chapter2/Update.md)
   * [List of upcoming features](chapter3/Roadmap.md)
-  * [Frequently Asked Questions](chapter4/FAQ.md)
+    * [Frequently Asked Questions](chapter4/FAQ.md)
 * [Users Mailing List](chapter5/MailingList.md)
 * [Polls](chapter6/Polls.md)
 * [Tips and Tricks](chapter7/TipsAndTricks.md)
