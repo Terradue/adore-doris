@@ -33,10 +33,14 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
     
 
         
-    <div class="book" data-level="7.18" data-basepath=".." data-revision="Fri Apr 17 2015 17:30:38 GMT+0200 (CEST)">
+    <div class="book" data-level="7.18" data-basepath=".." data-revision="Fri Apr 17 2015 17:36:17 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -1682,19 +1686,19 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="usage">USAGE:</h1>
+                        <h1 id="usage"><a name="usage" class="plugin-anchor" href="#usage"><span class="fa fa-link"></span></a>USAGE:</h1>
 <pre><code>   openInIpython
    openInIpython ${ADOREFOLDER}/lib/python/fun/script.py
    openInIpython python command
-</code></pre><h1 id="description">DESCRIPTION:</h1>
+</code></pre><h1 id="description"><a name="description" class="plugin-anchor" href="#description"><span class="fa fa-link"></span></a>DESCRIPTION:</h1>
 <p>openInIpython is an ADORE function which exports the settings from ADORE and imports them to ipython. It provides several objects and lists which allow easy access to project settings and results within ipython. These objects are listed in the output section below.</p>
-<h1 id="input">INPUT:</h1>
+<h1 id="input"><a name="input" class="plugin-anchor" href="#input"><span class="fa fa-link"></span></a>INPUT:</h1>
 <blockquote>
 <p>There are no required input parameters for this command.</p>
-<h2 id="optional">OPTIONAL:</h2>
+<h2 id="optional"><a name="optional" class="plugin-anchor" href="#optional"><span class="fa fa-link"></span></a>OPTIONAL:</h2>
 <pre><code>* python\_script: This argument can be a python script utilizing the objects created.
 * python\_command: If the argument is not a file, then it is interpreted as a python command.
-</code></pre><h1 id="output">OUTPUT</h1>
+</code></pre><h1 id="output"><a name="output" class="plugin-anchor" href="#output"><span class="fa fa-link"></span></a>OUTPUT</h1>
 <blockquote>
 <p>The below variables are set within ipython. The lists and settings contain the same information. The objects provide an easier method to browse through this information, because they allow tab completion.</p>
 <pre><code>* `A`: Adore object. Provides access to methods and other objects. The followings objects are also available in the user namespace for backwards compatibility: `settings, setobj, mres, mobj, sres, sobj, ires, iobj`.
@@ -1715,14 +1719,14 @@
 * `G.PROC_STACK`: Dictionary object for the processed (e.g. deramped) data stack.
 * `G.LS_PARAMS`: Dictionary object for the Least Squares inversion results.
 * `G.NSBAS_PARAMS`: Dictionary object for the NSBAS inversion results.
-</code></pre><h1 id="files-and-references">FILES and REFERENCES:</h1>
+</code></pre><h1 id="files-and-references"><a name="files-and-references" class="plugin-anchor" href="#files-and-references"><span class="fa fa-link"></span></a>FILES and REFERENCES:</h1>
 <pre><code> ${ADOREFOLDER}/lib/python/ipython.rc
  ${ADOREFOLDER}/lib/python/adore.py
  http://ipython.org/
  http://matplotlib.org/
-</code></pre><h1 id="example">EXAMPLE:</h1>
+</code></pre><h1 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>EXAMPLE:</h1>
 <pre><code> openInIpython
-</code></pre><h1 id="known-bugs">KNOWN BUGS:</h1>
+</code></pre><h1 id="known-bugs"><a name="known-bugs" class="plugin-anchor" href="#known-bugs"><span class="fa fa-link"></span></a>KNOWN BUGS:</h1>
 </blockquote>
 <p>When a python script is provided, only the number of lines are output which is quite useless.</p>
 </blockquote>

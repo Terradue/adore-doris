@@ -33,10 +33,14 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
     
 
         
-    <div class="book" data-level="9.14" data-basepath=".." data-revision="Fri Apr 17 2015 17:30:38 GMT+0200 (CEST)">
+    <div class="book" data-level="9.14" data-basepath=".." data-revision="Fri Apr 17 2015 17:36:17 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -1682,17 +1686,17 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="usage">USAGE:</h1>
+                        <h1 id="usage"><a name="usage" class="plugin-anchor" href="#usage"><span class="fa fa-link"></span></a>USAGE:</h1>
 <pre><code> mvDorisFiles sourceFolder destinationFolder
  mvDorisFiles -s &quot;/exact/path/to/source/Folder&quot; destinationFolder
-</code></pre><h1 id="description">DESCRIPTION:</h1>
+</code></pre><h1 id="description"><a name="description" class="plugin-anchor" href="#description"><span class="fa fa-link"></span></a>DESCRIPTION:</h1>
 <blockquote>
 <p>MVDORISFILES is an internal ADORE function which modifies Doris Result Files
 (<strong>.res) and Doris Input Files (</strong>.drs) by changing locations of the output
 files to their current locations.
 It is a mere string replacement utility. It does not check for errors.
 Each modified file is backed up with a .bck suffix (i.e **.res.bck)</p>
-<h1 id="input">INPUT:</h1>
+<h1 id="input"><a name="input" class="plugin-anchor" href="#input"><span class="fa fa-link"></span></a>INPUT:</h1>
 <p>sourceFolder: The path where the procesing was originally done. This string</p>
 <blockquote>
 <p>will be searched and replaced with the destination folder.</p>
@@ -1701,22 +1705,22 @@ Each modified file is backed up with a .bck suffix (i.e **.res.bck)</p>
 <blockquote>
 <p>will replace the sourceFolder in the<strong>.res and </strong>.drs files.</p>
 </blockquote>
-<h2 id="optional">OPTIONAL:</h2>
+<h2 id="optional"><a name="optional" class="plugin-anchor" href="#optional"><span class="fa fa-link"></span></a>OPTIONAL:</h2>
 <blockquote>
 <p>-s: option is used to update**.res files that are already moved to their</p>
 <blockquote>
 <p>destination, e.g. scp&apos;ed from a different computer. With this option
 mvDorisFiles only tries to update files without actually moving anything.</p>
-<h1 id="output">OUTPUT</h1>
+<h1 id="output"><a name="output" class="plugin-anchor" href="#output"><span class="fa fa-link"></span></a>OUTPUT</h1>
 </blockquote>
 </blockquote>
 <p>The files are moved to a new folder and input/output (<strong>.drs/</strong>.res) files
 are modified.</p>
-<h1 id="files-and-references">FILES and REFERENCES:</h1>
+<h1 id="files-and-references"><a name="files-and-references" class="plugin-anchor" href="#files-and-references"><span class="fa fa-link"></span></a>FILES and REFERENCES:</h1>
 <pre><code> ${ADOREFOLDER}/src/fun/mvDorisFiles
-</code></pre><h1 id="example">EXAMPLE:</h1>
+</code></pre><h1 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>EXAMPLE:</h1>
 <pre><code>  mvDorisFiles -s &apos;/data/batu/adore_MexicoCity2/process/3DKalman/i12s&apos; &apos;/home/bosmanoglu/des3/kalman/3D/data&apos;
-</code></pre><h1 id="known-bugs">KNOWN BUGS:</h1>
+</code></pre><h1 id="known-bugs"><a name="known-bugs" class="plugin-anchor" href="#known-bugs"><span class="fa fa-link"></span></a>KNOWN BUGS:</h1>
 <p>None.</p>
 </blockquote>
 

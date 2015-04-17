@@ -33,10 +33,14 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
     
 
         
-    <div class="book" data-level="7.8" data-basepath=".." data-revision="Fri Apr 17 2015 17:30:38 GMT+0200 (CEST)">
+    <div class="book" data-level="7.8" data-basepath=".." data-revision="Fri Apr 17 2015 17:36:17 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -1682,7 +1686,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="usage">USAGE:</h1>
+                        <h1 id="usage"><a name="usage" class="plugin-anchor" href="#usage"><span class="fa fa-link"></span></a>USAGE:</h1>
 <pre><code>    dem operation parameters
     dem make [SRTM1/SRTM3] [extraBufferPercentage] [name]
     dem load [path/to/demfile.dem]
@@ -1693,11 +1697,11 @@
         dem expand path/to/big.dem [merged.bil]
         dem export format 
         dem view
-</code></pre><h1 id="description">DESCRIPTION:</h1>
+</code></pre><h1 id="description"><a name="description" class="plugin-anchor" href="#description"><span class="fa fa-link"></span></a>DESCRIPTION:</h1>
 <blockquote>
 <p>DEM is an internal ADORE command.
 It can generate and load DEM settings to the environment.</p>
-<h1 id="input">INPUT:</h1>
+<h1 id="input"><a name="input" class="plugin-anchor" href="#input"><span class="fa fa-link"></span></a>INPUT:</h1>
 <ul>
 <li><code>dem</code>:<br><ul><li>defaults to &quot;dem check&quot;<br>
 </li></ul><ul><li><code>dem make SRTM1/SRTM3 extraBufferPercentage name</code><br>
@@ -1730,19 +1734,19 @@ It can generate and load DEM settings to the environment.</p>
 </li>
 </ul>
 </blockquote>
-<p></p><h1>OUTPUT:</h1><p></p>
+<p></p><h1><a name="undefined" class="plugin-anchor" href="#undefined"><span class="fa fa-link"></span></a>OUTPUT:</h1><p></p>
 <p><blockquote><code>dem make</code>: Generates a folder with the dem. Leaves the hgt files in the current folder.<br>
 <code>dem load</code>: No outputs if success. Updates DORIS settings starting with <code>sam<em></em></code>, <code>dac</code>, and <code>crd_</code>.<br>
 <code>dem unload</code>: Displays a text message indicating cleared variables.<br>
 <code>dem check</code>: Checks and displays possible problems fixes on stdout.<br></blockquote></p>
-<p></p><h1>FILES and REFERENCES:</h1><p></p>
+<p></p><h1><a name="undefined" class="plugin-anchor" href="#undefined"><span class="fa fa-link"></span></a>FILES and REFERENCES:</h1><p></p>
 <p><pre><code> None.<br>
 </code></pre></p>
-<p></p><h1>EXAMPLE:</h1><p></p>
+<p></p><h1><a name="undefined" class="plugin-anchor" href="#undefined"><span class="fa fa-link"></span></a>EXAMPLE:</h1><p></p>
 <p><pre><code>dem convert merapi_15m.asc &quot;-s_srs &apos;+proj=utm +zone=49M +ellps=WGS84 +datum=WGS84 +units=m +no_defs&apos; &quot;<br>
 dem load merapi_15m.bil<br>
 </code></pre></p>
-<p></p><h1>KNOWN BUGS:</h1>
+<p></p><h1><a name="undefined" class="plugin-anchor" href="#undefined"><span class="fa fa-link"></span></a>KNOWN BUGS:</h1>
 <blockquote>If the merged DEM size is over 2GB the DEM expand command fails.<p></p>
 </blockquote>
                     

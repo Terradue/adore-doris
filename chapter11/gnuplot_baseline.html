@@ -33,10 +33,14 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
     
 
         
-    <div class="book" data-level="9.12" data-basepath=".." data-revision="Fri Apr 17 2015 17:30:38 GMT+0200 (CEST)">
+    <div class="book" data-level="9.12" data-basepath=".." data-revision="Fri Apr 17 2015 17:36:17 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -1682,30 +1686,30 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="usage">USAGE:</h1>
+                        <h1 id="usage"><a name="usage" class="plugin-anchor" href="#usage"><span class="fa fa-link"></span></a>USAGE:</h1>
 <pre><code> gnuplot_baseline baselinesList
-</code></pre><h1 id="description">DESCRIPTION:</h1>
+</code></pre><h1 id="description"><a name="description" class="plugin-anchor" href="#description"><span class="fa fa-link"></span></a>DESCRIPTION:</h1>
 <blockquote>
 <p>GNUPLOT_BASELINE is an intenal ADORE function to show the calculated
 temporal-perpendicular baselines as a scatterplot. It uses gnuplot for the
 generation of the image in encapsulated post script (EPS) format.</p>
-<h1 id="input">INPUT:</h1>
+<h1 id="input"><a name="input" class="plugin-anchor" href="#input"><span class="fa fa-link"></span></a>INPUT:</h1>
 <p>baselinesList: The file that contains the data in three colums separated by
 space. The order of columns are: temporal baseline, perpendicular baseline,
 and orbit names.</p>
-<h2 id="optional">OPTIONAL:</h2>
+<h2 id="optional"><a name="optional" class="plugin-anchor" href="#optional"><span class="fa fa-link"></span></a>OPTIONAL:</h2>
 <blockquote>
 <p>There are no optional input parameters for this command.</p>
-<h1 id="output">OUTPUT</h1>
+<h1 id="output"><a name="output" class="plugin-anchor" href="#output"><span class="fa fa-link"></span></a>OUTPUT</h1>
 </blockquote>
 <p>Generates an image of the calculated temporal and perpendicular baselines
 named baselines.eps.</p>
-<h1 id="files-and-references">FILES and REFERENCES:</h1>
+<h1 id="files-and-references"><a name="files-and-references" class="plugin-anchor" href="#files-and-references"><span class="fa fa-link"></span></a>FILES and REFERENCES:</h1>
 <pre><code> ${ADOREFOLDER}/scr/fun/plotting.fun
  http://ilab.cs.byu.edu/cs360/
-</code></pre><h1 id="example">EXAMPLE:</h1>
+</code></pre><h1 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>EXAMPLE:</h1>
 <pre><code> gnuplot_baseline ${outputFolder}/baselines
-</code></pre><h1 id="known-bugs">KNOWN BUGS:</h1>
+</code></pre><h1 id="known-bugs"><a name="known-bugs" class="plugin-anchor" href="#known-bugs"><span class="fa fa-link"></span></a>KNOWN BUGS:</h1>
 <p>Fails when the baselinesList file has bad formatting, which may happen due
 to no estimation of perpendicular or temporal baseline. In that case the
 baselines file has to be edited manually.</p>

@@ -33,10 +33,14 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
     
 
         
-    <div class="book" data-level="7.6" data-basepath=".." data-revision="Fri Apr 17 2015 17:30:38 GMT+0200 (CEST)">
+    <div class="book" data-level="7.6" data-basepath=".." data-revision="Fri Apr 17 2015 17:36:17 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -1682,22 +1686,22 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="usage">USAGE:</h1>
+                        <h1 id="usage"><a name="usage" class="plugin-anchor" href="#usage"><span class="fa fa-link"></span></a>USAGE:</h1>
 <pre><code>    check
     check setup
     check resultFile
         check updates
     check -p processName
     check -j jobid
-</code></pre><h1 id="description">DESCRIPTION:</h1>
+</code></pre><h1 id="description"><a name="description" class="plugin-anchor" href="#description"><span class="fa fa-link"></span></a>DESCRIPTION:</h1>
 <blockquote>
 <p>CHECK is an internal ADORE command.
 It shows the process control list from the result files.
 Using the <code>-p</code> option it can be used to check whether a given step is possible  to run.  <code>setup</code> option can be used to check if ADORE can find all the necessary libraries. <code>updates</code> option can be used to check for and download updates.</p>
-<h1 id="input">INPUT:</h1>
+<h1 id="input"><a name="input" class="plugin-anchor" href="#input"><span class="fa fa-link"></span></a>INPUT:</h1>
 <p>No required inputs.</p>
 <blockquote>
-<h2 id="optional">OPTIONAL:</h2>
+<h2 id="optional"><a name="optional" class="plugin-anchor" href="#optional"><span class="fa fa-link"></span></a>OPTIONAL:</h2>
 <pre><code>  * resultFile: If specified, only displays given files process control list.
   * -p processName: Check if ADORE can run the given doris process. This function is currently under development. If no output is shown the it is OK to run the process. Otherwise error messages will hint at the problem.
   * -j jobid: Check if the job submitted by quejob is finished. Return 0 if finished.
@@ -1712,12 +1716,12 @@ Using the <code>-p</code> option it can be used to check whether a given step is
        6: Held
 </code></pre><pre><code>  * setup: Check several executables and returns assistive messages if executables are missing.
   * updates: Check and install the adore-doris.googlecode.com SVN repository for the latest version of ADORE.
-</code></pre><h1 id="output">OUTPUT</h1>
+</code></pre><h1 id="output"><a name="output" class="plugin-anchor" href="#output"><span class="fa fa-link"></span></a>OUTPUT</h1>
 </blockquote>
 <p>Shows the process control list of given result file.</p>
-<h1 id="files-and-references">FILES and REFERENCES:</h1>
+<h1 id="files-and-references"><a name="files-and-references" class="plugin-anchor" href="#files-and-references"><span class="fa fa-link"></span></a>FILES and REFERENCES:</h1>
 <pre><code> None.
-</code></pre><h1 id="example">EXAMPLE:</h1>
+</code></pre><h1 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>EXAMPLE:</h1>
 <pre><code> check
  check -p m_readfiles; echo $?
  check setup
@@ -1752,7 +1756,7 @@ oversample:             1
 resample:               1
 filt_azi:               0
 filt_range:             0
-</code></pre><h1 id="known-bugs">KNOWN BUGS:</h1>
+</code></pre><h1 id="known-bugs"><a name="known-bugs" class="plugin-anchor" href="#known-bugs"><span class="fa fa-link"></span></a>KNOWN BUGS:</h1>
 <p>None.</p>
 </blockquote>
 

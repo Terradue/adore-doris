@@ -33,10 +33,14 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
     
 
         
-    <div class="book" data-level="7.12" data-basepath=".." data-revision="Fri Apr 17 2015 17:30:38 GMT+0200 (CEST)">
+    <div class="book" data-level="7.12" data-basepath=".." data-revision="Fri Apr 17 2015 17:36:17 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -1682,7 +1686,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="usage">USAGE:</h1>
+                        <h1 id="usage"><a name="usage" class="plugin-anchor" href="#usage"><span class="fa fa-link"></span></a>USAGE:</h1>
 <pre><code>    giant operation [parameters]
         giant list
         giant prepxml_SBAS
@@ -1692,12 +1696,12 @@
         giant SBASInvert
         giant NSBASInvert
         giant plotts
-</code></pre><h1 id="description">DESCRIPTION:</h1>
+</code></pre><h1 id="description"><a name="description" class="plugin-anchor" href="#description"><span class="fa fa-link"></span></a>DESCRIPTION:</h1>
 <blockquote>
 <p>GIANT is an internal ADORE command.
 It is designed to be an interface between ADORE processing results and Generic InSAR Analysis Toolbox (Piyush A. Shanker, <a href="http://earthdef.caltech.edu/" target="_blank">http://earthdef.caltech.edu/</a>).</p>
 </blockquote>
-<h1 id="input">INPUT:</h1>
+<h1 id="input"><a name="input" class="plugin-anchor" href="#input"><span class="fa fa-link"></span></a>INPUT:</h1>
 <ul>
 <li><p><code>giant list</code>: Lists available GIAnT functions.</p>
 </li>
@@ -1710,14 +1714,14 @@ It is designed to be an interface between ADORE processing results and Generic I
 <li><p><code>giant ProcessStack|SBASInvert|NSBASInvert|plotts [parameters]</code>: These are simple redirection functions, that call GIAnT python executables with the same name.</p>
 </li>
 </ul>
-<h1 id="output">OUTPUT:</h1>
+<h1 id="output"><a name="output" class="plugin-anchor" href="#output"><span class="fa fa-link"></span></a>OUTPUT:</h1>
 <blockquote>
 <p><code>${runFolder}/giant</code>: All files related to GIAnT are created in this folder.</p>
 </blockquote>
-<h1 id="files-and-references">FILES and REFERENCES:</h1>
+<h1 id="files-and-references"><a name="files-and-references" class="plugin-anchor" href="#files-and-references"><span class="fa fa-link"></span></a>FILES and REFERENCES:</h1>
 <pre><code> `${ADOREFOLDER}/lib/python/giant/prepxml_SBAS.py`
  http://earthdef.caltech.edu/projects/giant/wiki
-</code></pre><h1 id="example">EXAMPLE:</h1>
+</code></pre><h1 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>EXAMPLE:</h1>
 <pre><code> ADORE: giant prepxml_SBAS
  ADORE: giant &quot;PrepIgramStack;ProcessStack;SBASInvert&quot;
  ADORE: giant list
@@ -1729,7 +1733,7 @@ prepxml_MINTS  ProcessStack    NSBASInvert   InvertWaveletCoeffs        make_mov
                                              WavelettoData               
                                SBASxval      InvertWaveletCoeffs_xval
                                Timefnxval    WavelettoData_xval
-</code></pre><h1 id="known-bugs">KNOWN BUGS:</h1>
+</code></pre><h1 id="known-bugs"><a name="known-bugs" class="plugin-anchor" href="#known-bugs"><span class="fa fa-link"></span></a>KNOWN BUGS:</h1>
 <blockquote>
 <p>Currently ADORE generated DEMs can not be read directly into GIAnT.</p>
 </blockquote>

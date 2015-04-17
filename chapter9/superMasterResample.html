@@ -33,10 +33,14 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
     
 
         
-    <div class="book" data-level="7.29" data-basepath=".." data-revision="Fri Apr 17 2015 17:30:38 GMT+0200 (CEST)">
+    <div class="book" data-level="7.29" data-basepath=".." data-revision="Fri Apr 17 2015 17:36:17 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -1682,9 +1686,9 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="usage">USAGE:</h1>
+                        <h1 id="usage"><a name="usage" class="plugin-anchor" href="#usage"><span class="fa fa-link"></span></a>USAGE:</h1>
 <pre><code>    superMasterResample superMaster [scene]
-</code></pre><h1 id="description">DESCRIPTION:</h1>
+</code></pre><h1 id="description"><a name="description" class="plugin-anchor" href="#description"><span class="fa fa-link"></span></a>DESCRIPTION:</h1>
 <blockquote>
 <p>superMasterResample is an internal ADORE command. <br></p>
 <blockquote>It resamples all crops to a single master image, so that the resulting files can be used to combine interferograms among any pair without resampling. <br></blockquote>
@@ -1696,14 +1700,14 @@
 <blockquote>If a DEM is not available it is equivalent to running:<br>
 <blockquote><code>settings apply -r -q int_multilook=\&quot;1 1\&quot; srp_multilook=\&quot;1 1\&quot; srp_dumprefpha=on;coarseorb;coarsecorr;fine;coregpm;resample;interfero; comprefpha;subtrrefpha;addrefpha2s_crop</code><br></blockquote></blockquote>
 
-<p></p><h1>INPUT:</h1><p></p>
+<p></p><h1><a name="undefined" class="plugin-anchor" href="#undefined"><span class="fa fa-link"></span></a>INPUT:</h1><p></p>
 <blockquote>superMaster: the name of the folder in the data file to be used as the resampling master.</blockquote>
 
-<blockquote><h2>OPTIONAL:</h2>
+<blockquote><h2><a name="undefined" class="plugin-anchor" href="#undefined"><span class="fa fa-link"></span></a>OPTIONAL:</h2>
 <blockquote><code>[scene]</code>: Specify a single scene to be resampled, instead of using all the <code>scenes include</code>d in the project.</blockquote></blockquote>
 
 
-<p></p><h1>OUTPUT</h1><p></p>
+<p></p><h1><a name="undefined" class="plugin-anchor" href="#undefined"><span class="fa fa-link"></span></a>OUTPUT</h1><p></p>
 <p><blockquote>Creates the <code>resample</code> folder inside the <code>${runFolder}</code> and resamples all crops listed in <code>scenes include</code></blockquote></p>
 
                     
